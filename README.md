@@ -24,4 +24,4 @@
 
 ## Gen Ed
 - [2313213 DIGITAL PHOTOGRAPHY](https://github.com/5hyfilm/2313213-digital-photo)
-- [2313221 PHOTO SCI](https://github.com/5hyfilm/2313221-photo-sci)
+- [2313221 PHOTOGRAPHIC SCIENCE](https://github.com/5hyfilm/2313221-photo-sci)
