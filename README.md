@@ -26,6 +26,7 @@
 ## Elective
 - [2110503 SOFTWARE DEVELOPMENT PRACTICE](https://github.com/5hyfilm/2110503-sw-dev-prac)
 - [2110507 SOFTWARE DEVELOPMENT PRACTICE II](https://github.com/5hyfilm/2110507-sw-dev-prac-2)
+- [2110571 NEURAL NETWORK](https://github.com/5hyfilm/2110571-neural-network)
 
 ## Gen Ed
 - [2313213 DIGITAL PHOTOGRAPHY](https://github.com/5hyfilm/2313213-digital-photo)
