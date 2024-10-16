@@ -23,6 +23,9 @@
 - [2110363 HARDWARE SYNTHESIS LABORATORY]()
 ---
 
+## Elective
+- [2110507 SOFTWARE DEVELOPMENT PRACTICE II](https://github.com/5hyfilm/2110507-sw-dev-prac-2)
+
 ## Gen Ed
 - [2313213 DIGITAL PHOTOGRAPHY](https://github.com/5hyfilm/2313213-digital-photo)
 - [2313221 PHOTOGRAPHIC SCIENCE](https://github.com/5hyfilm/2313221-photo-sci)
