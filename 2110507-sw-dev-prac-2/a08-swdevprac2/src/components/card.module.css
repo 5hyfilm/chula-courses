@@ -1,0 +1,44 @@
+div.card {
+    width: 250px;
+    height: auto; /* Allow the height to adjust based on content */
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 10px;
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+div.cardimg {
+    width: 100%;
+    height: 150px; /* Fixed height for the image */
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+div.cardtext {
+    padding: 15px;
+    text-align: center;
+}
+
+div.cardtext h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+div.cardtext p {
+    font-size: 1rem;
+    color: #555;  /* Example color for the description text */
+    margin-bottom: 1rem;
+}
+
+div.cardtext a.cardlink {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.cardtext a.cardlink:hover {
+    text-decoration: underline;
+}

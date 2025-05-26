@@ -1,0 +1,28 @@
+.banner {
+    display: block;
+    padding: 5px;
+    margin: 0;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+.bannerText {
+    position: absolute; /* Keep the text in place relative to the image */
+    top: 100px;
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Offset to perfectly center the text */
+    z-index: 20;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px 20px; /* Add padding to give space around the text */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 90%; /* Ensure the text box doesn't extend beyond the viewport */
+}
+
+.bannerText h1,
+.bannerText h3 {
+    color: black; /* Black text for contrast */
+    margin: 0; /* Remove margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slightly darker text shadow */
+}
