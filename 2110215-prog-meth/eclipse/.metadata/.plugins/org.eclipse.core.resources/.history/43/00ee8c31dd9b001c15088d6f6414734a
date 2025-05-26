@@ -1,0 +1,37 @@
+package card.type;
+
+import card.base.UnitCard;
+import player.Player;
+
+//You CAN modify the first line
+public class DebuffUnitCard extends UnitCard {	
+	
+	private int level;
+
+	public DebuffUnitCard(String name, String flavorText, int bloodCost, int power, int health, int debuffPower) {
+		super(name, flavorText, bloodCost, power, health);
+		setDebuffPower(debuffPower);
+	}	
+	
+	public int attackUnit(UnitCard unitCard) {
+		int h = unitCard.getHealth();
+		int p = unitCard.getPower();
+		unitCard.setHealth(h - this.power);
+//		unitCard.setPower(p - this.power);
+		p = p - this.power;
+		if (this.power > h) {
+			return h;
+		}
+		else {
+			return this.power;
+		}	
+	}
+	
+	public int getDebuffPower() {
+		return level;
+	}
+	
+	public void setDebuffPower(int level) {
+		this.level = level;
+	}
+}

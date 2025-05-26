@@ -1,0 +1,34 @@
+package card.type;
+
+import card.base.SpellCard;
+import card.base.UnitCard;
+
+//You CAN modify the first line
+public class DamageSpellCard extends SpellCard {
+	
+	private int damage;
+
+	public DamageSpellCard(String name, String flavorText, int bloodCost, boolean isBurstSpeed, int damage) {
+		super(name, flavorText, bloodCost, isBurstSpeed);
+	}
+	
+	public int getDamage() {
+		return damage;
+	}
+	
+	public void setDamage(int damage) {
+		if (this.damage < 1) {
+			this.damage = 1;
+		}
+		else {
+			this.damage = damage;
+		}
+	}
+
+	@Override
+	public void castSpell(UnitCard unitCard) {
+		// TODO Auto-generated method stub
+		int h = unitCard.getHealth();
+		unitCard.setHealth(h - this.damage);
+	}
+}

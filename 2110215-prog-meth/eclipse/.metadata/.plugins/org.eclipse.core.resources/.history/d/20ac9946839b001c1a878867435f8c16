@@ -1,0 +1,56 @@
+package card.type;
+
+import card.base.UnitCard;
+import player.Player;
+
+//You CAN modify the first line
+public class LeaderUnitCard extends UnitCard {
+	protected int buffPower;
+	protected int buffHealth;
+	
+	public LeaderUnitCard(String name, String flavorText, int bloodCost, int power, int health, int buffPower, int buffHealth) {
+		super(name, flavorText, bloodCost, power, health);
+		setBuffPower(buffPower);
+		setBuffHealth(buffHealth);
+	}
+	
+	@Override
+	public String toString() {
+		return super.getName() + " (POW: " + super.getPower() + ", HP: " + super.getHealth() + 
+				" | POW Inc: "+ this.getBuffPower() + ", HP Inc: " + this.getBuffHealth() + ")";
+	}
+
+	public void buffUnit(UnitCard[] alliesCard) {
+		for (UnitCard c: alliesCard) {
+			if (a == null) {
+				;
+			}
+			else {
+				a.set += this.power;
+				a.health += this.h;	
+			}
+		}
+	}
+
+	@Override
+	public int attackUnit(UnitCard u) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public int getBuffPower() {
+		return buffPower;
+	}
+
+	public void setBuffPower(int buffPower) {
+		this.buffPower = buffPower;
+	}
+
+	public int getBuffHealth() {
+		return buffHealth;
+	}
+
+	public void setBuffHealth(int buffHealth) {
+		this.buffHealth = buffHealth;
+	}
+}

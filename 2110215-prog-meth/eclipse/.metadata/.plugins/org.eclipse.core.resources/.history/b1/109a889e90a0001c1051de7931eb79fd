@@ -1,0 +1,114 @@
+package deck;
+
+import java.util.Arrays;
+
+import card.base.Card;
+
+public class Deck {
+	// TODO: constructor
+	public String name;
+	private Card[] deckList;
+	private int deckSize;
+	private Card rm;
+	
+	public Deck(String name, Card[] deckList) {
+		this.name = name;
+		this.deckList = Arrays.copyOf(deckList, deckList.length);
+		setDeckSize(deckList.length);
+	}
+
+	//You CAN modify the first line
+		public int insertCard(Card card) throws InsertCardFailedException{
+			int count = 0;
+			for (Card c: deckList) {
+				if (c.getName().equals(card.getName())) {
+					count += 1;
+				}
+				else {
+					;
+				}
+			}
+			if(count >= 4) {
+				throw new InsertCardFailedException("You can only put 4 of the same cards into the deck");
+			}
+			//FILL CODE HERE
+			//You can use Arrays.copyOf(Original Array, New Length) to create new arrays with bigger size
+			//Must return new deckSize
+			int l = deckList.length;
+			deckList = Arrays.copyOf(deckList, l + 1);
+			deckSize = deckList.length;
+			deckList[l] = card;
+				l += 1;
+			return deckSize;			
+		}
+
+		//You CAN modify the first line
+		public Card removeCard(int slotNumber) throws RemoveCardFailedException {
+			
+			if (this.deckList.length <= slotNumber) {
+				throw new RemoveCardFailedException("Number you insert exceed deck size");
+			}		
+			if (this.deckList[slotNumber] == null) {
+				throw new RemoveCardFailedException("There is no card in that slot");
+			}
+			//FILL CODE HERE
+			//You can use Arrays.copyOf(Original Array, New Length) to create new arrays with bigger size (Added slot is empty)
+			//Once card is removed, other card down the list must rearrange to the empty slot
+			//Must return card that was removed
+			int l = deckList.length;
+//			Card[] space = new Card[l-1];
+//            Card removeCard = deckList[slotNumber];
+//            int k = 0;
+//            for (int i = 0; i < l; i++) {
+//                if (i != slotNumber) {
+//                	space[k] = deckList[i];
+//                	k++;
+//                }
+//            }
+//            deckList = Arrays.copyOf(space, l - 1);
+//            return removeCard;
+			
+			Card[] space = new Card[l-1];
+            Card removeCard = deckList[slotNumber];
+            for(int i=0, k=0; i<this.deckSize; i++) {
+                if (i != slotNumber) {
+                	space[k++] = this.deckList[i];
+                }
+            }
+            l = l-1;;
+            return removeCard;
+		}
+
+	@Override
+	public String toString() {
+		return new StringBuilder()
+				.append("{").append(this.getName()).append("}")
+				.append("(").append(this.getDeckSize()).append(" deck size)")
+				.toString();
+	}
+	
+	/* GETTERS & SETTERS */
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Card[] getDeckList() {
+		return deckList;
+	}
+
+	public void setDeckList(Card[] deckList) {
+		this.deckList = deckList;
+	}
+
+	public int getDeckSize() {
+		return deckSize;
+	}
+
+	public void setDeckSize(int deckSize) {
+		this.deckSize = deckSize;
+	}
+}

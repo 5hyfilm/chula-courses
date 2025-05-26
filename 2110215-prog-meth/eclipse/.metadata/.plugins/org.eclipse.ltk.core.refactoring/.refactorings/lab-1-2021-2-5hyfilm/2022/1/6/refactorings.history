@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;logic.UnitCard.flavorText&apos; in &apos;logic.UnitCard&apos;&#x0A;- Original project: &apos;lab-1-2021-2-5hyfilm&apos;&#x0A;- Original element: &apos;logic.UnitCard.flavorText&apos;&#x0A;- Getter method name: &apos;getFlavorText&apos;&#x0A;- Setter method name: &apos;setFlavorText&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;flavorText&apos;" flags="589830" getter="getFlavorText" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;logic{UnitCard.java[UnitCard^flavorText" insertion="10" setter="setFlavorText" stamp="1643606519215" version="1.0" visibility="1"/>
+</session>

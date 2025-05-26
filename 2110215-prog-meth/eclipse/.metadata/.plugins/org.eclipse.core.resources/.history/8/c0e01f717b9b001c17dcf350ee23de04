@@ -1,0 +1,28 @@
+package card.type;
+
+import card.base.SpellCard;
+import card.base.UnitCard;
+
+//You CAN modify the first line
+public class BuffSpellCard extends SpellCard {
+
+	public BuffSpellCard(String name, String flavorText, int bloodCost, boolean isBurstSpeed, int powerIncrease) {
+		super(name, flavorText, bloodCost, isBurstSpeed);
+		setPowerIncrease(powerIncrease);
+	}
+	
+	private void setPowerIncrease(int powerIncrease) {
+		// TODO Auto-generated method stub
+		this.powerIncrease = powerIncrease;
+	}
+
+	public int getPowerIncrease(int powerIncrease) {
+		return powerIncrease;
+	}
+	
+	public void castSpell(UnitCard unitcard) {
+		int p = unitcard.getPower() + this.powerIncrease;
+	}
+	
+	
+}
