@@ -1,0 +1,542 @@
+[
+  {
+    "description": "    As a user\n    I want to be able to add and remove items from the cart\n    So that I can purchase items correctly",
+    "elements": [
+      {
+        "description": "",
+        "id": "inventory-management;validate-the-addition-and-removal-of-items-in-the-cart",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Validate the addition and removal of items in the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1317892874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I log in to the inventory page with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_modifying.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2146916583
+            },
+            "embeddings": [
+              {
+                "data": "Q29udGVudCBpcyBjYWNoZWQgZm9yIG9mZmxpbmUgdXNlLg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I add the first 4 items to the cart",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_modifying.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 528852124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I remove 3 items from the cart, starting with the first item displayed",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_modifying.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 602904792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see 1 items in the cart",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_modifying.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18590915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I should see a \"Remove\" button for the remaining items",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_modifying.steps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42949208
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 95975999
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAzMTcuODkyODc0IG1pbGxpc2Vjb25kcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@inventory",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "inventory-management",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Inventory Management",
+    "tags": [
+      {
+        "name": "@inventory",
+        "line": 1
+      }
+    ],
+    "uri": "src/features/inventory/inventory_modifying.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inventory-sorting-feature;successfully-sorting-inventory-products",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Successfully sorting inventory products",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 357472125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I log in to the inventory page with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_modifying.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1010584958
+            },
+            "embeddings": [
+              {
+                "data": "Q29udGVudCBpcyBjYWNoZWQgZm9yIG9mZmxpbmUgdXNlLg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I select the \"Price (high to low)\" with value \"hilo\" sorting option",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_sorting.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112368542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the inventory items should be sorted in the correct order corresponding to \"hilo\"",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_sorting.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25413791
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18225124
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAzNTcuNDcyMTI1IG1pbGxpc2Vjb25kcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@inventory",
+            "line": 1
+          },
+          {
+            "name": "@inventory_sort",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory-sorting-feature;failed-to-sort-the-inventory-products",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Failed to sort the inventory products",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 211984250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I log in to the inventory page with username \"error_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_modifying.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000377207
+            },
+            "embeddings": [
+              {
+                "data": "Q29udGVudCBpcyBjYWNoZWQgZm9yIG9mZmxpbmUgdXNlLg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select the \"Price (high to low)\" with value \"hilo\" sorting option",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_sorting.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192725625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see an error dialog with error message \"Sorting is broken!\"",
+            "match": {
+              "location": "src/step_definitions/inventory/inventory_sorting.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143478624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61489208
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAyMTEuOTg0MjUgbWlsbGlzZWNvbmRz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@inventory",
+            "line": 1
+          },
+          {
+            "name": "@inventory_sort",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "inventory-sorting-feature",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Inventory Sorting Feature",
+    "tags": [
+      {
+        "name": "@inventory",
+        "line": 1
+      },
+      {
+        "name": "@inventory_sort",
+        "line": 1
+      }
+    ],
+    "uri": "src/features/inventory/inventory_sorting.feature"
+  },
+  {
+    "description": "    As a user\n    I want to be able to Login\n    So I could access the other features",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-feature;login-with-standard-user",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login with standard user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 230005667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I visit the home page",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 515234792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I input username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284531667
+            },
+            "embeddings": [
+              {
+                "data": "Q29udGVudCBpcyBjYWNoZWQgZm9yIG9mZmxpbmUgdXNlLg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I clicks on the home page login button",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176298833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should navigate to \"/inventory.html\"",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3613624
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19436832
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAyMzAuMDA1NjY3IG1pbGxpc2Vjb25kcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-feature;login-with-locked-out-user",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login with locked out user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 261543624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I visit the home page",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2158172582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I input username \"locked_out_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 449292666
+            },
+            "embeddings": [
+              {
+                "data": "Q29udGVudCBpcyBjYWNoZWQgZm9yIG9mZmxpbmUgdXNlLg==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I clicks on the home page login button",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136647667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see an error message containing \"Sorry, this user has been locked out.\" on the login button",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10105458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I should not navigate to \"/inventory.html\"",
+            "match": {
+              "location": "src/step_definitions/login/login.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5040207
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81625374
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAyNjEuNTQzNjI0IG1pbGxpc2Vjb25kcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "src/features/login/login.feature"
+  }
+]

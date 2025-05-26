@@ -1,0 +1,8 @@
+mode: set
+Golang-Unit-Test/user/controller.go:13.61,15.2 1 1
+Golang-Unit-Test/user/controller.go:17.75,19.18 2 1
+Golang-Unit-Test/user/controller.go:19.18,26.3 4 1
+Golang-Unit-Test/user/controller.go:28.2,29.16 2 1
+Golang-Unit-Test/user/controller.go:29.16,36.3 4 1
+Golang-Unit-Test/user/controller.go:39.2,48.37 4 1
+Golang-Unit-Test/user/service.go:9.65,11.2 1 0
