@@ -1,0 +1,80 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/banner.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.banner_banner__Ag4N_ {
+    display: block;
+    padding: 5px;
+    margin: 0;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+
+.banner_bannerText__KL2aB {
+    position: absolute; /* Keep the text in place relative to the image */
+    top: 100px;
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Offset to perfectly center the text */
+    z-index: 20;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px 20px; /* Add padding to give space around the text */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 90%; /* Ensure the text box doesn't extend beyond the viewport */
+}
+
+.banner_bannerText__KL2aB h1,
+.banner_bannerText__KL2aB h3 {
+    color: black; /* Black text for contrast */
+    margin: 0; /* Remove margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slightly darker text shadow */
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/card.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+div.card_card__VgpBR {
+    width: 250px;
+    height: auto; /* Allow the height to adjust based on content */
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top: 10px;
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+div.card_cardimg__9MrVh {
+    width: 100%;
+    height: 150px; /* Fixed height for the image */
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+div.card_cardtext__CmD2N {
+    padding: 15px;
+    text-align: center;
+}
+
+div.card_cardtext__CmD2N h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+div.card_cardtext__CmD2N p {
+    font-size: 1rem;
+    color: #555;  /* Example color for the description text */
+    margin-bottom: 1rem;
+}
+
+div.card_cardtext__CmD2N a.card_cardlink__xt_Ps {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.card_cardtext__CmD2N a.card_cardlink__xt_Ps:hover {
+    text-decoration: underline;
+}
+

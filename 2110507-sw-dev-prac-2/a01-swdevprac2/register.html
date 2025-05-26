@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register for Tour</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            text-align: right;
+        }
+        .header p {
+            margin: 0;
+        }
+        h1 {
+            color: #003366;
+            text-align: center;
+            margin: 20px 0;
+        }
+        form {
+            background-color: white;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #004d99;
+        }
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <p>ลงทะเบียนจองทัวร์</p>
+    </div>
+
+    <h1>ลงทะเบียนจองทัวร์</h1>
+
+    <form action="submit_form.php" method="post">
+        <div class="form-group">
+            <label for="tourGroup">ประเภทกลุ่มทัวร์:</label>
+            <select id="tourGroup" name="tourGroup">
+                <option value="small">กลุ่มเล็ก (10-15 คน)</option>
+                <option value="standard">กลุ่มมาตรฐาน (35-40 คน)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="joinLand"> ต้องการซื้อบัตรโดยสารเครื่องบินเอง (Join Land)
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="travelerCount">จำนวนผู้ร่วมเดินทาง:</label>
+            <input type="number" id="travelerCount" name="travelerCount" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contactName">ชื่อผู้ติดต่อ:</label>
+            <input type="text" id="contactName" name="contactName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contactPhone">เบอร์ผู้ติดต่อ:</label>
+            <input type="tel" id="contactPhone" name="contactPhone" required>
+        </div>
+
+        <button type="submit">ลงทะเบียน</button>
+    </form>
+
+    <footer>
+        <p>รหัสนิสิต: 6432154921 | ชื่อ-นามสกุล: วรันธร จันทร์สว่าง</p>
+    </footer>
+
+</body>
+</html>
