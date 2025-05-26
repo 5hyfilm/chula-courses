@@ -1,0 +1,26 @@
+{
+    "0" : [
+        "Cardboard",
+        "cardboard"
+    ],
+    "1" : [
+        "Glass",
+        "glass"
+    ],
+    "2" : [
+        "Metal",
+        "metal"
+    ],
+    "3" : [
+        "Paper",
+        "paper"
+    ],
+    "4" : [
+        "Plastic",
+        "plastic"
+    ],
+    "5" : [
+        "Trash",
+        "trash"
+    ]
+}
