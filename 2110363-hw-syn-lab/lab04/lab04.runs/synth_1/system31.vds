@@ -1,0 +1,273 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct  8 12:48:17 2024
+# Process ID: 480
+# Current directory: C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1
+# Command line: vivado.exe -log system31.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system31.tcl
+# Log file: C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/system31.vds
+# Journal file: C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1\vivado.jou
+# Running On        :Oar-Stu0829
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz
+# CPU Frequency     :2592 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :8417 MB
+# Swap memory       :5637 MB
+# Total Virtual     :14055 MB
+# Available Virtual :5057 MB
+#-----------------------------------------------------------
+source system31.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 517.055 ; gain = 224.922
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/utils_1/imports/synth_1/system1.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/utils_1/imports/synth_1/system1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top system31 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2724
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.172 ; gain = 448.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system31' [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/sources_1/new/system3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'system3' [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/synth/system3.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system3_calculator_0_0' [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/.Xil/Vivado-480-Oar-Stu0829/realtime/system3_calculator_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system3_calculator_0_0' (0#1) [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/.Xil/Vivado-480-Oar-Stu0829/realtime/system3_calculator_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system3_clkDivide_0_0' [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/.Xil/Vivado-480-Oar-Stu0829/realtime/system3_clkDivide_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system3_clkDivide_0_0' (0#1) [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/.Xil/Vivado-480-Oar-Stu0829/realtime/system3_clkDivide_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system3_segmentDriver_0_0' [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/.Xil/Vivado-480-Oar-Stu0829/realtime/system3_segmentDriver_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system3_segmentDriver_0_0' (0#1) [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/.Xil/Vivado-480-Oar-Stu0829/realtime/system3_segmentDriver_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system3_xlconstant_0_0' [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_xlconstant_0_0/synth/system3_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'system3_xlconstant_0_0' (0#1) [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_xlconstant_0_0/synth/system3_xlconstant_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'system3' (0#1) [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/synth/system3.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system31' (0#1) [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/sources_1/new/system3.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1485.746 ; gain = 557.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1485.746 ; gain = 557.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1485.746 ; gain = 557.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1485.746 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_clkDivide_0_0/system3_clkDivide_0_0/system3_clkDivide_0_0_in_context.xdc] for cell 'st/clkDivide_0'
+Finished Parsing XDC File [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_clkDivide_0_0/system3_clkDivide_0_0/system3_clkDivide_0_0_in_context.xdc] for cell 'st/clkDivide_0'
+Parsing XDC File [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_segmentDriver_0_0/system3_segmentDriver_0_0/system3_segmentDriver_0_0_in_context.xdc] for cell 'st/segmentDriver_0'
+Finished Parsing XDC File [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_segmentDriver_0_0/system3_segmentDriver_0_0/system3_segmentDriver_0_0_in_context.xdc] for cell 'st/segmentDriver_0'
+Parsing XDC File [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_calculator_0_0/system3_calculator_0_0/system3_calculator_0_0_in_context.xdc] for cell 'st/calculator_0'
+Finished Parsing XDC File [c:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.gen/sources_1/bd/system3/ip/system3_calculator_0_0/system3_calculator_0_0/system3_calculator_0_0_in_context.xdc] for cell 'st/calculator_0'
+Parsing XDC File [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc:62]
+Finished Parsing XDC File [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system31_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system31_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system31_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1499.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1499.340 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for st. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for st/clkDivide_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for st/segmentDriver_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for st/calculator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for st/xlconstant_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |system3_calculator_0_0    |         1|
+|2     |system3_clkDivide_0_0     |         1|
+|3     |system3_segmentDriver_0_0 |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |system3_calculator_0    |     1|
+|2     |system3_clkDivide_0     |     1|
+|3     |system3_segmentDriver_0 |     1|
+|4     |IBUF                    |    14|
+|5     |OBUF                    |    11|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:36 . Memory (MB): peak = 1499.340 ; gain = 557.559
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1499.340 ; gain = 571.152
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1499.340 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1499.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 5cf25047
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1499.340 ; gain = 970.824
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1499.340 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab04/lab04.runs/synth_1/system31.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system31_utilization_synth.rpt -pb system31_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  8 12:49:15 2024...

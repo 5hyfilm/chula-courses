@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/film/Documents/HW/lab01/lab01.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/TestDFlipFlop.v,1724138987,verilog,,,,TestDFlipFlop,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/fullAdder2Tester.v,1724136475,verilog,,,,fullAdder2Tester,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/fullAdderTester.v,1724135705,verilog,,,,fullAdderTester,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/shiftTest.v,1724140156,verilog,,,,shiftTest,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sources_1/new/DFlipFlop.v,1724137275,verilog,,C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/TestDFlipFlop.v,,DFlipFlop,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sources_1/new/fullAdder.v,1724134041,verilog,,C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/fullAdderTester.v,,fullAdder,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sources_1/new/fullAdder2.v,1724136254,verilog,,C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/fullAdder2Tester.v,,fullAdder2,,,,,,,,
+C:/Users/film/Documents/HW/lab01/lab01.srcs/sources_1/new/shift.v,1724139458,verilog,,C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/shiftTest.v,,shiftA;shiftB,,,,,,,,

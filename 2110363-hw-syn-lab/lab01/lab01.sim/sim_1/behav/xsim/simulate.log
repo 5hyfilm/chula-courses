@@ -1,0 +1,11 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+time                    0: {0 0} <- {0 0 0}
+time                10000: {0 1} <- {0 0 1}
+time                20000: {0 1} <- {0 1 0}
+time                30000: {1 0} <- {0 1 1}
+time                40000: {0 1} <- {1 0 0}
+time                50000: {1 0} <- {1 0 1}
+time                60000: {1 0} <- {1 1 0}
+time                70000: {1 1} <- {1 1 1}
+$finish called at time : 80 ns : File "C:/Users/film/Documents/HW/lab01/lab01.srcs/sim_1/new/fullAdder2Tester.v" Line 48

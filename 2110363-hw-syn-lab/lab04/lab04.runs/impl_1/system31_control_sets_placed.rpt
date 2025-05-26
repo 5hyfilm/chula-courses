@@ -1,0 +1,122 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Oct  8 12:50:02 2024
+| Host         : Oar-Stu0829 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system31_control_sets_placed.rpt
+| Design       : system31
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   226 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |    29 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |    13 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             106 |           55 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             100 |           27 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+----------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|                   Clock Signal                  |                       Enable Signal                      |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------+----------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|  st/segmentDriver_0/inst/cd/genblk1[14].ff/f_14 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[11].ff/f_11 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[12].ff/f_12 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[17].ff/f_17 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[15].ff/f_15 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[8].ff/f_8          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[1].ff/f_1   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[7].ff/f_7   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[16].ff/f_16 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[18].ff/f_18 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[3].ff/f_3   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[2].ff/f_2   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[6].ff/f_6   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[5].ff/f_5   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[4].ff/f_4   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[9].ff/f_9   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[1].ff/f_1          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[4].ff/f_4          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[6].ff/f_6          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[5].ff/f_5          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[2].ff/f_2          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[3].ff/f_3          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[8].ff/f_8   |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[7].ff/f_7          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/clkDivide_0/inst/genblk1[9].ff/f_9          |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[13].ff/f_13 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[10].ff/f_10 |                                                          |                                                          |                1 |              1 |         1.00 |
+|  clk_IBUF                                       |                                                          |                                                          |                2 |              2 |         1.00 |
+|  st/segmentDriver_0/inst/cd/genblk1[19].ff/f[0] |                                                          |                                                          |                1 |              2 |         2.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[6].db/count[6]_i_2__5_n_0   | st/calculator_0/inst/genblk1[6].db/count[6]_i_1__5_n_0   |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[7].db/count[6]_i_2__6_n_0   | st/calculator_0/inst/genblk1[7].db/count[6]_i_1__6_n_0   |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[8].db/count[6]_i_2__7_n_0   | st/calculator_0/inst/genblk1[8].db/count[6]_i_1__7_n_0   |                2 |              7 |         3.50 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[0].db/count[6]_i_2_n_0      | st/calculator_0/inst/genblk1[0].db/count[6]_i_1_n_0      |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[10].db/count[6]_i_2__9_n_0  | st/calculator_0/inst/genblk1[10].db/count[6]_i_1__9_n_0  |                3 |              7 |         2.33 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[11].db/count[6]_i_2__10_n_0 | st/calculator_0/inst/genblk1[11].db/count[6]_i_1__10_n_0 |                3 |              7 |         2.33 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[12].db/count[6]_i_2__11_n_0 | st/calculator_0/inst/genblk1[12].db/count[6]_i_1__11_n_0 |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[1].db/count[6]_i_2__0_n_0   | st/calculator_0/inst/genblk1[1].db/count[6]_i_1__0_n_0   |                3 |              7 |         2.33 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[2].db/count[6]_i_2__1_n_0   | st/calculator_0/inst/genblk1[2].db/count[6]_i_1__1_n_0   |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[3].db/count[6]_i_2__2_n_0   | st/calculator_0/inst/genblk1[3].db/count[6]_i_1__2_n_0   |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[4].db/count[6]_i_2__3_n_0   | st/calculator_0/inst/genblk1[4].db/count[6]_i_1__3_n_0   |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[5].db/count[6]_i_2__4_n_0   | st/calculator_0/inst/genblk1[5].db/count[6]_i_1__4_n_0   |                1 |              7 |         7.00 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[9].db/count[6]_i_2__8_n_0   | st/calculator_0/inst/genblk1[9].db/count[6]_i_1__8_n_0   |                2 |              7 |         3.50 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   | st/calculator_0/inst/genblk1[0].sp/E[0]                  | st/calculator_0/inst/genblk1[0].sp/SR[0]                 |                6 |              9 |         1.50 |
+|  st/clkDivide_0/inst/genblk1[10].ff/f_10_BUFG   |                                                          |                                                          |               25 |             75 |         3.00 |
++-------------------------------------------------+----------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+
+

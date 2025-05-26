@@ -1,0 +1,15 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sim_1/new/tester.v,1728973834,verilog,,,,tester,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sim_1/new/tester2.v,1728973853,verilog,,,,tester2,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/adder.v,1728969929,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/alu.v,,adder,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/alu.v,1728974141,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/control.v,,alu,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/control.v,1728972950,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/extender.v,,control,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/extender.v,1728970926,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/mux.v,,extender,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/mux.v,1728973288,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/nanocpu.v,,mux2_1,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/nanocpu.v,1728973422,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/oldmemory.v,,nanocpu,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/oldmemory.v,1728973487,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/regfile.v,,oldmemory,,,,,,,,
+C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sources_1/new/regfile.v,1728971071,verilog,,C:/Users/OarChula/Documents/GitHub/2110363-HWSynLab/lab05/lab05.srcs/sim_1/new/tester2.v,,regfile,,,,,,,,
