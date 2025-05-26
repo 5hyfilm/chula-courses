@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+    <head>
+        <meta charset="UTF-8">
+        <title> Activity 6 : ร้านขาย C++ </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>ฝากซื้อด้วย</h1>
+        <h2>รายชื่อผู้มีสิทธิ์ฝากซื้อ</h2>
+        <ul>
+            <li>Natthaphon Suphansri</li>
+            <li>Waranthorn Chansawang</li>
+            <li>Sirapop Chaddaeng</li>
+        </ul>
+        <h2>รายการฝากซื้อ</h2>
+        <table id="main-table" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ของที่ฝากซื้อ</th>
+                    <th>ชื่อผู้ฝากซื้อ</th>
+                    <th>ราคา (บาท)</th>
+                    <th>ดำเนินการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>โค้กส้ม</td>
+                    <td>Natthaphon Suphansri</td>
+                    <td>18.0</td>
+                    <td><button id="add-newrow" onclick="deleteRow(this)">ลบ</button></td>
+                </tr>
+                <tr>
+                    <td>ข้าวผัดปู (เวฟด้วย)</td>
+                    <td>Waranthorn Chansawan</td>
+                    <td>45.0</td>
+                    <td><button id="add-newrow" onclick="deleteRow(this)">ลบ</button></td>
+                </tr>
+                <tr>
+                    <td>ปูอัดแพคเล็ก</td>
+                    <td>Natthaphon Suphansri</td>
+                    <td>40.0</td>
+                    <td><button id="add-newrow" onclick="deleteRow(this)">ลบ</button></td>
+                </tr>
+                <tr>
+                    <td>น้ำทิพย์ (เอาขวดไม่ยวบยาบ)</td>
+                    <td>Sirapop Chaddaeng</td>
+                    <td>7.0</td>
+                    <td><button id="add-newrow" onclick="deleteRow(this)">ลบ</button></td>
+                </tr>
+                <tr>
+                    <td>C-Vitt มะนาว</td>
+                    <td>Waranthorn Chansawang</td>
+                    <td>15.50</td>
+                    <td><button id="add-newrow" onclick="deleteRow(this)">ลบ</button></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input id="item-to-add"></td>
+                    <td>
+                        <form>
+                            <select id="name-to-add">
+                                <option>--เลือกผู้ฝากซื้อ--</option>
+                                <option value="Natthaphon Suphansri">Natthaphon Suphansri</option>
+                                <option value="Waranthorn Chansawang">Waranthorn Chansawang</option>
+                                <option value="Sirapop Chaddaeng">Sirapop Chaddaeng</option>
+                            </select>
+                        </form>
+                    </td>
+                    <td><input type="number" id="price-to-add"></td>
+                    <td><button id="add-newrow" onclick="myFunction();">เพิ่ม</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+    <!-- <script type="module" src="script.js"></script> -->
+    <script src="script.js"></script>
+</html>

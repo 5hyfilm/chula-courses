@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {margin: 0;
+    background-color: #282828;
+}
+
+div h1{
+  color: rgb(245, 183, 64);
+  font-weight: bold;
+}
+
+div h2{
+    color: rgb(245, 183, 64);
+}
+
+div p{
+    color: white;
+}
+
+div a{
+  color: white;
+}
+
+li, figcaption {
+  color: white;
+}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  background-color: rgb(245, 183, 64);
+  color: black;
+}
+
+ul.sidenav li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+div.content {
+  margin-left: 15%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+/* TABLE */
+table, th, td {
+  border:1px solid black;
+}
+
+#member-list{
+    margin:0;
+    font-size: 0.8em;
+}
+#main-table{
+    padding: 0;
+    width: 100%;
+    background: #EEE;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.1);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+#main-table > thead{
+    background: #555;
+    color:white;
+}
+#main-table > thead > tr > th{
+    font-weight: lighter;
+    text-align: center;
+}
+#main-table td,#main-table th{
+    padding: 5px 10px;
+    font-weight: lighter;
+}
+#item-to-add, #name-to-add, #price-to-add{
+    padding:5px 10px;
+    border-radius: 8px;
+    border:1px solid #AAA;
+}
+.delete-row, #add-newrow{
+    border-radius: 8px;
+    padding: 5px 5px;
+    border: 1px solid #AAA;
+    background: white;
+    width: 60px;
+    cursor: pointer;
+}
+.delete-row:hover, #add-newrow:hover{
+    background: rgb(245, 183, 64);
+    color:white;
+}
+
+#container{
+  border:1px solid #333;
+  border-radius :20px;
+  width:400px;
+  margin:20px auto;
+  padding:20px;
+  text-align:center;
+  background : #333;
+}
+
+#timer{ 
+  color:rgb(245, 183, 64); 
+  font-size:50px; 
+  margin:10px auto;
+  border : 5px solid rgb(245, 183, 64);
+  border-radius:50%;
+  width:200px;
+  height:200px;
+  overflow:hidden;
+  position:relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+
+#time{
+  margin-top:70px;
+  z-index : 1;
+  position:relative;
+}
+
+#filler{
+  background : #ddffcc;
+  height: 0px;
+  width: 200px;
+  position:absolute;
+  bottom:0;
+}
+
+#buttons button { 
+  background:#4da6ff; 
+  border:none; 
+  color:#fff; 
+  cursor:pointer; 
+  padding:5px; 
+  width:90px; 
+  margin:10px auto;
+  font-size:14px;
+  height : 50px;
+  border-radius : 50px;
+}
+
+#buttons button#shortBreak{
+  background : #0c0;
+}
+
+#buttons button#longBreak{
+  background : #080;
+}
+
+#buttons button#reset{
+  background : #f00;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
