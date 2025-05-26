@@ -1,0 +1,38 @@
+db.getCollection('order_lines').aggregate([
+    {
+        $unwind: "$order_lines"
+    },
+    {
+        $group: {
+            _id: "$order_lines.product_id",
+            order_quantity: { $sum: "$order_lines.ordered_quantity" }
+        }
+    },
+    {
+        $lookup: {
+            from: "product",
+            localField: "_id",
+            foreignField: "product_id",
+            as: "product_info"
+        }
+    },
+    {
+        $unwind: "$product_info"
+    },
+    {
+        $project: {
+            _id: 0,
+            product_id: "$_id",
+            product_name: "$product_info.product_name",
+            ordered_quantity: "$order_quantity"
+        }
+    },
+    {
+        $sort: {
+            ordered_quantity: -1
+        }
+    },
+    {
+        $limit: 1
+    }
+])

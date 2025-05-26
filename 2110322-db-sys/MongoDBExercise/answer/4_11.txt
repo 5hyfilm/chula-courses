@@ -1,0 +1,27 @@
+db.customer.aggregate([
+    {
+        $lookup: {
+            from: "order_lines",  // Join with order_lines collection
+            localField: "customer_id",  // Field in customer
+            foreignField: "customer_id",  // Field in order_lines
+            as: "orders"  // Name of the new array field that will hold matching orders
+        }
+    },
+    {
+        $match: {
+            orders: { $size: 0 }  // Select customers who have an empty orders array (no orders)
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            customer_id: 1,
+            customer_name: 1
+        }
+    },
+    {
+        $sort: {
+            customer_id: 1  // Sort by customer_id in ascending order
+        }
+    }
+])

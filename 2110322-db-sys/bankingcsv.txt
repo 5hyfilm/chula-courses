@@ -1,0 +1,11 @@
+\copy account FROM '/home/banking/account.csv' DELIMITER ',';
+
+\copy borrower FROM '/home/banking/borrower.csv' DELIMITER ',';
+
+\copy branch FROM '/home/banking/branch.csv' DELIMITER ',';
+
+\copy customer FROM '/home/banking/customer.csv' DELIMITER ',';
+
+\copy depositor FROM '/home/banking/depositor.csv' DELIMITER ',';
+
+\copy loan FROM '/home/banking/loan.csv' DELIMITER ',';

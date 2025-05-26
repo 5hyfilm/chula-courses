@@ -1,0 +1,35 @@
+db.order_lines.aggregate([
+    {
+        $group: {
+            _id: "$customer_id",  // Group by customer_id
+            num_orders: { $sum: 1 }  // Count the number of orders per customer
+        }
+    },
+    {
+        $lookup: {
+            from: "customer",  // Join with the customer collection
+            localField: "_id",  // customer_id from order_lines
+            foreignField: "customer_id",  // customer_id in customer collection
+            as: "customer_info"
+        }
+    },
+    {
+        $unwind: "$customer_info"  // Unwind the customer_info array to access customer_name
+    },
+    {
+        $sort: {
+            num_orders: -1,  // Sort by num_orders in descending order (highest first)
+            "customer_info.customer_name": 1  // Alphabetical order for customer_name if there's a tie
+        }
+    },
+    {
+        $limit: 1  // Limit to the top customer
+    },
+    {
+        $project: {
+            _id: 0,
+            customer_id: "$_id",
+            customer_name: "$customer_info.customer_name"
+        }
+    }
+]);
